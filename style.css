@@ -89,6 +89,8 @@ aside .twitter
 
 header h1
 {
+	z-index:1;
+	position: relative;
 	overflow:hidden;
 	line-height:9999px;
 	height: 103px;
@@ -98,6 +100,8 @@ header h1
 
 header h2
 {
+	z-index: 10;
+	position: relative;
 	font-weight: normal;
 	font-family: 'century gothic', 'lucida grande', 'helvetica', 'sans-serif';
 	font-size: 10pt;
@@ -121,7 +125,7 @@ header h2 a:hover
 
 header .special
 {
-	color: #ca625e;
+	color: #c9f4ff;
 	font-weight: bold;
 }
 
@@ -150,6 +154,12 @@ footer p
 	margin-top:8px;
 	display: block;
 	width:540px;
+}
+
+footer img
+{
+	float: left;
+	padding-bottom: 5px;
 }
 
 footer .highlight a
@@ -212,8 +222,25 @@ footer small
 {
 	display: block;
 	margin: 0 auto; /*center-align content*/
+	padding:10px 0;
 	width: 620px;
 	background-color: #323232;
+}
+
+.content-area h3
+{
+	margin-left:20px;
+}
+
+.content-area li
+{
+	list-style-type: none;
+	margin: 0;
+}
+
+.content-area div
+{
+	text-align: center;
 }
 
 .stripe
@@ -225,7 +252,7 @@ footer small
 	float: right;
 }
 
-section.body
+section.body, article
 {
 	font-family: 'Lucida Grande', 'Helvetica', 'sans-serif';
 	font-size: 10pt;
@@ -236,7 +263,7 @@ section.body
 	color: #b1b1b1;
 }
 
-section h1
+section h1, article h1
 {
 	color: #fff;
 	font-family: 'century gothic', 'lucida grande', 'helvetica', 'sans-serif';
@@ -249,18 +276,36 @@ section h1
 	background-color: #1f788d;
 }
 
-section p
+section a
+{
+	text-decoration: none;
+}
+
+article .live-link
+{
+	color: #fff;
+	position:relative;
+	float:right;
+	margin:-30px 10px 0 0;
+}
+
+article .live-link:hover
+{
+	text-decoration:none;
+}
+
+section p, article p
 {
 	padding: 10px 20px;
 	margin:0;
 }
 
-section p a
+section p a, article p a
 {
 	color:#fff;
 }
 
-section p a:hover
+section p a:hover, article p a:hover
 {
 	color: #a2a2a2;
 	text-decoration:none;
@@ -268,12 +313,49 @@ section p a:hover
 
 section img
 {
-	padding: 10px;
-	border:none;
+	margin: 10px;
+	border: none;
+}
+
+.work
+{
+	position: relative;
+	width: 100%;#999
+}
+
+a.darkenimg h2, a.darkenimg h3
+{
+	position: absolute;
+	color: #CBCBCB;
+	margin: 0;
+	padding: 0;
+}
+
+a.darkenimg:hover h2, a.darkenimg:hover h3
+{
+	display: none;
+}
+
+
+a.darkenimg h2
+{
+	left: 20px;
+	top: 25px;
+	font-size: 20pt;
+}
+
+
+a.darkenimg h3
+{
+	left: 20px;
+	top: 60px;
+	font-size: 10pt;
 }
 
 a.darkenimg img
 {
+	margin: 5px 8px;
+	border: 1px solid #525252;
 	/* for IE */
 	  filter:alpha(opacity=40);
 	  /* CSS3 standard */

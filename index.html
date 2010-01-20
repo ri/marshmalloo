@@ -1,75 +1,157 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<title>Marshmalloo: The works of Ri Liu</title>
+<html lang="en"> 
+<head> 
+<meta charset="utf-8" /> 
+<title>Marshmalloo: The works of Ri Liu</title> 
+ 
+<link rel="stylesheet" href="style.css" type="text/css" /> 
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.2.6.css" media="screen" />
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" /> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> 
+<script language="javascript" src="js/jquery.easing.js"></script> 
+<script language="javascript" src="js/jquery.easing_compatibility.js"></script> 
+<script type="text/javascript" src="js/jquery.smoothanchors2.js"></script> 
+<script type="text/javascript" src="js/jquery.fancybox-1.2.6.pack.js"></script>
 
-<link rel="stylesheet" href="style.css" type="text/css" />
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-<script language="javascript" src="js/jquery.easing.js"></script>
-<script language="javascript" src="js/jquery.easing_compatibility.js"></script>
-<script type="text/javascript" src="js/jquery.smoothanchors2.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]--> 
+<script type="text/javascript"> 
+$(document).ready(function() {
 	$.smoothAnchors("normal", "linear", false);
+	$("a.zoom").fancybox();
+
+	$("a.zoom1").fancybox({
+		'overlayOpacity'	:	0.7,
+		'overlayColor'		:	'#FFF'
+	});
+
+	$("a.zoom2").fancybox({
+		'zoomSpeedIn'		:	500,
+		'zoomSpeedOut'		:	500
+	});
 });
-</script>
-</head>
-
-<body id="index" class="home">
-  <div id="banner">
-  </div>
-    <header class="body">
-      <hgroup>
-        <a href="http://marshmalloo.com" id="title"><h1>Marshmalloo</h1></a>
-        <h2>the works of <span class="special">digital designer</span> and <span class="special">creative coder</span>, <a href="#scroll">Ri Liu</a></h2>
-      </hgroup>
-      <aside id="contact" class="body">
-        <address>
-          <a href="mailto:ri@marshmalloo.com" class="email">ri@marshmalloo.com</a>
-          <br />
-          <a href="http://twitter.com/riblah" class="twitter">@riblah</a>
-        </address>
-        <a href="#" class="highlight">download my CV [pdf]</a>
-      </aside>
-    </header>
+</script> 
+<script type="text/javascript"> 
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script> 
+<script type="text/javascript"> 
+try {
+var pageTracker = _gat._getTracker("UA-10568087-1");
+pageTracker._trackPageview();
+} catch(err) {}</script> 
+</head> 
+ 
+<body id="index" class="home"> 
+  <div id="banner"> 
+  </div> 
+    <header class="body"> 
+      <hgroup> 
+        <a href="http://marshmalloo.com" id="title"><h1><b style="color:black;background-color:#ffff66">Marshmalloo</b></h1></a> 
+        <h2>the works of <span class="special">digital designer</span> and <span class="special">creative coder</span>, <a href="#scroll">Ri Liu</a></h2> 
+      </hgroup> 
+      <aside id="contact" class="body"> 
+        <address> 
+          <a href="mailto:ri@marshmalloo.com" class="email">ri@marshmalloo.com</a> 
+          <br /> 
+          <a href="http://twitter.com/riblah" class="twitter">@riblah</a> 
+        </address> 
+        <a href="http://www.marshmalloo.com/files/resume.pdf" class="highlight">download my CV [pdf]</a> 
+      </aside> 
+    </header> 
     
-    <div id="stripe1" class="stripe"></div>
-    <section id="current-works" class="body">
-      <h1>Current Works</h1>
-      <span class="content-area">
-        <img src="images/works/dearqut.png" />
-            <p><strong>DearQUT:</strong> concept and web design</p>
+    <div id="stripe1" class="stripe"></div> 
+    <section id="current-works" class="body"> 
+      <h1>Current Works</h1> 
+      <span class="content-area"> 
+        <a href="designaday.html"><img src="images/works/designaday.png" /></a>
+            <p><strong>Design A Day:</strong> daily design exercise</p>
              
-            <p>DearQUT is a student run feedback system which uses social media and community-based support to allow students and staff to get their voices heard by the institution. <a href="dearqut.html">...more</a></p>
-        <a href="#" class="darkenimg"><img src="images/works/pixemo.png" /></a>
-      </span>
-    </section>
+            <p>This project was inspired by an article on <a href="http://www.smashingmagazine.com/2009/12/22/design-something-every-day/">Smashing Magazine</a> which posed a challenge for designers to design something every day for a whole year <a href="designaday.html">...more</a></p>        
+      </span> 
+    </section> 
         
-    <div id="stripe2" class="stripe"></div>
-    <section id="past-works" class="body">
-      <h1>Past Works</h1>
-      <span class="content-area">
-        <a href="#" class="darkenimg"><img src="images/works/scamper.png" /></a>
-        <a href="#" class="darkenimg"><img src="images/works/elephant.png" /></a>
-      </span>
-    </section>
-
-  <div id="footerbg">
-  </div>
-  <footer class="body">
-    <a name ="scroll"></a>
-    <nav><a href="#">to top</a></nav>
-    <h1>About</h1>
-    <p>Ri Liu is a <strong>designer</strong> who codes, and a <strong>coder</strong> who designs (she loves both equally as much). She has an interest in web technologies, interaction design and computational art. </p>
-    <p>She’s handy with a few languages (Ruby on Rails, PHP, C#, Processing & more) and her tools of choice include her mac, TextMate and Adobe CS4.</p>
-    <img src="images/ri.jpg" />
-    <p class="highlight">
-      If you are interested in hiring Ri, or getting her onboard for your next project, email her at <a href="mailto:ri@marshmalloo.com">ri@marshmalloo.com</a>.
-      <br /><br />
-      If you’re still not convinced, you should check our her <a href="#">resume</a>.
-    </p>
-    <small>original design and site by Ri Liu</small>
-  </footer>
-</body>
+    <div id="stripe2" class="stripe"></div> 
+    <section id="past-works" class="body"> 
+      <h1>Past Works</h1> 
+      <span class="content-area"> 
+        <div class="work"> 
+        <a href="dearqut.html" class="darkenimg"> 
+              <img src="images/works/dearqut.png" /> 
+              <h2>DearQUT</h2> 
+              <h3>Social feedback system</h3> 
+        </a>
+        </div>
+        <div class="work"> 
+        <a href="pixemo.html" class="darkenimg"> 
+            <img src="images/works/pixemo.png" /> 
+            <h2>Pixemo</h2> 
+            <h3>interactive installation</h3> 
+        </a> 
+        </div> 
+        <div class="work"> 
+        <a href="videomixer.html" class="darkenimg"> 
+            <img src="images/works/videomixer.png" /> 
+            <h2>Video Mixer</h2> 
+            <h3>Interactive Sequencer</h3> 
+        </a> 
+        </div> 
+        <div class="work"> 
+        <a href="dandylion.html" class="darkenimg"> 
+            <img src="images/works/dandylion.png" /> 
+            <h2>Dandylion</h2> 
+            <h3>2d Platformer game</h3> 
+        </a> 
+        </div> 
+        <div class="work"> 
+        <a href="http://bjeanes.com" class="darkenimg"> 
+          <img src="images/works/begenius.png" /> 
+           <h2>Be Genius</h2> 
+          <h3>Code Website/blog</h3></a> 
+          </div> 
+          <div class="work"> 
+        <a href="http://scamper.heroku.com" class="darkenimg"><img src="images/works/scamper.png" /> 
+          <h2>Scamper</h2> 
+          <h3>Online Scavenger hunt application</h3></a> 
+          </div> 
+          <div class="work"> 
+        <a href="images/works/marshmalloo_large.png" rel="group" title="initial site web design" class="darkenimg zoom"><img src="images/works/marshmalloo.png" /> 
+        <h2>Marshmalloo</h2> 
+        <h3>Previous site design</h3></a> 
+        </div> 
+        <div class="work"> 
+        <a href="images/works/elephant_large.png" rel="group"  title="Customised drupal site" class="darkenimg zoom"><img src="images/works/elephant.png" /> 
+         <h2>Pink Elephant Cafe</h2> 
+          <h3>Made-up cafe site design</h3></a> 
+          </div> 
+          <div class="work"> 
+        <a href="images/works/efs_large.png" rel="group"  title="Customised joomla site" class="darkenimg zoom"><img src="images/works/efs.png" /> 
+        <h2>EFS</h2> 
+         <h3>Website & CMS for economics student society</h3></a> 
+         </div> 
+         <div class="work"> 
+        <a href="images/works/pastafarian_large.png" rel="group"  title="Customised wordpress site with google maps and modified plugins"class="darkenimg zoom"><img src="images/works/pastafarian.png" /> 
+          <h2>QUT Pastafarians</h2> 
+           <h3>Site design for QUT Pastafarian Society</h3></a> 
+           </div> 
+      </span> 
+    </section> 
+ 
+  <div id="footerbg"> 
+  </div> 
+  <footer class="body"> 
+    <a name ="scroll"></a> 
+    <nav><a href="#">to top</a></nav> 
+    <h1>About</h1> 
+    <p>Ri Liu is a <strong>designer</strong> who codes, and a <strong>coder</strong> who designs (she loves both equally as much). She has an interest in web technologies, interaction design and computational art. </p> 
+    <p>She’s handy with a few languages (Ruby on Rails, PHP, C#, Processing & more) and her tools of choice include her mac, TextMate and Adobe CS4.</p> 
+    <img src="images/ri.jpg" /> 
+    <p class="highlight"> 
+      If you are interested in hiring Ri, or getting her on board for your next project, email her at <a href="mailto:ri@marshmalloo.com">ri@marshmalloo.com</a>.
+      <br /><br /> 
+      If you’re still not convinced, you should check our her <a href="http://www.marshmalloo.com/files/resume.pdf">resume</a>.
+    </p> 
+    <small>original design and site by Ri Liu</small> 
+  </footer> 
+</body> 
 </html>
